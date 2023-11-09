@@ -1,0 +1,4 @@
+//the forward add rule will search for _index.scss to load the styles from it.
+
+@forward 'globals';
+@forward 'layout';

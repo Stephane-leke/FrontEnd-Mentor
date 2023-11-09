@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.info__title {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.info__desc {
+  color: var(--neutral);
+  font-weight: 500;
+  font-size: 0.6rem;
+}
+
+em {
+  font-style: normal;
+  font-size: 1rem;
+  color: var(--neutral);
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+.card__content--title {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.card__content--desc {
+  color: var(--neutral);
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+:root {
+  --background-color: hsl(185, 75%, 39%);
+  --text-color: hsl(229, 23%, 23%);
+  --neutral: hsl(0, 0%, 59%);
+  --neutral-op50: rgba(150, 150, 150, 0.5);
+  --card-color: hsl(0, 0%, 100%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-color);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 70px 20px rgba(0, 0, 0, 0.18);
+}
+.card__head img {
+  width: 335px;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+.card__content {
+  display: flex;
+  height: calc((335px + 3rem) * 0.4);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+.card__content--image {
+  width: auto;
+  border: solid 5px hsl(0, 0%, 100%);
+  border-radius: 50%;
+  position: relative;
+  top: -1.8rem;
+}
+.card__content--title {
+  margin-bottom: 0.5rem;
+}
+.card__foot {
+  height: calc((335px + 3rem) * 0.2);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  border-top: 1px solid var(--neutral-op50);
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-bg, .top-img, .bottom-img {
+  position: fixed;
+  z-index: -1;
+}
+
+.top-img {
+  top: -500px;
+  left: -220px;
+}
+@media (max-width: 380px) {
+  .top-img {
+    left: -800px;
+  }
+}
+
+.bottom-img {
+  bottom: -650px;
+  right: -150px;
+}
+@media (max-width: 380px) {
+  .bottom-img {
+    right: -700px;
+  }
+}

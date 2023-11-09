@@ -1,0 +1,38 @@
+//all styles related to typography in your website
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.info__title {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.info__desc {
+    color: var(--neutral);
+    font-weight: 500;
+    font-size: 0.6rem;
+}
+
+em {
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--neutral);
+    font-weight: 400;
+    margin-left: 0.5rem;
+}
+
+.card__content {
+    &--title {
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    &--desc {
+        color: var(--neutral);
+        font-weight: 500;
+        font-size: 0.75rem;
+    }
+}

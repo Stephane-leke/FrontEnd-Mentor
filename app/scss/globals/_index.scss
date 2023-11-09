@@ -1,0 +1,7 @@
+//always an index file in each scss partial folder
+//using the sass add rule "@forward" to load styles from other partial into this main one
+//all styles present here (globals) will get forwarded into the main sass file, style.scss, go to style.scss to see
+
+@forward 'boilerplate';
+@forward 'typography';
+@forward 'colors';

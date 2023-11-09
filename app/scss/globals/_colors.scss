@@ -1,0 +1,10 @@
+//css custom properties for colors
+//the root selector will take priority and overwrite values of the same variable name
+
+:root {
+    --background-color: hsl(185, 75%, 39%);
+    --text-color: hsl(229, 23%, 23%);
+    --neutral: hsl(0, 0%, 59%);
+    --neutral-op50: rgba(150, 150, 150, 0.5);
+    --card-color: hsl(0, 0%, 100%);
+}
